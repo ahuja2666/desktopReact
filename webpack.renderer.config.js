@@ -15,6 +15,10 @@ rules.push({
     },
   ],
 });
+rules.push({
+  test: /\.svg$/, // Match image file extensions
+  type: "asset/resource",         // Use Webpack's asset module for handling images
+});
 
 module.exports = {
   // Put your normal webpack config below here
